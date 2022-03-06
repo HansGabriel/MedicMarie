@@ -1,7 +1,8 @@
 import User from "../../models/user";
 import Response from "../../models/response";
+import connectDB from "../../middleware/mongodb";
 
-export default async function handler(req, res, next) {
+async function handler(req, res, next) {
 	console.log("hello");
 	console.log("recieved stuff!");
 	console.log(req.body.inboundSMSMessageList.inboundSMSMessage);
@@ -70,3 +71,5 @@ export default async function handler(req, res, next) {
   res.send('done!');
   */
 }
+
+export default connectDB(handler);
