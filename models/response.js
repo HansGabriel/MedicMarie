@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 const Schema = mongoose.Schema;
+const RegExp = require("mongoose-regexp");
 //require('mongoose-regexp')(mongoose);
 
 const response = new Schema({
@@ -20,7 +21,6 @@ const response = new Schema({
 	],
 	label: {
 		type: String,
-		required: true,
 	},
 });
 
