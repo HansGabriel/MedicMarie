@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 const Schema = mongoose.Schema;
-require("mongoose-regexp")(mongoose);
+//require('mongoose-regexp')(mongoose);
 
 const response = new Schema({
 	message: {
