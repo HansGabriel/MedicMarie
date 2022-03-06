@@ -26,6 +26,7 @@ const user = new Schema({
 	current_message: {
 		type: Schema.Types.ObjectId,
 		ref: "Response",
+		required: true,
 	},
 });
 

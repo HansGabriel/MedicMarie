@@ -20,6 +20,7 @@ const response = new Schema({
 	],
 	label: {
 		type: String,
+		required: true,
 	},
 });
 
